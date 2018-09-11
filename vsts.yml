@@ -62,8 +62,8 @@ phases:
     queue: Hosted Linux Preview
     steps:
       - script: |
-        apt-get update
-        apt-get install -y --no-install-recommends libsecret-1-dev
+          apt-get update
+          apt-get install -y --no-install-recommends libsecret-1-dev
       - task: NodeTool@0
         inputs:
           versionSpec: '8.11.1'
